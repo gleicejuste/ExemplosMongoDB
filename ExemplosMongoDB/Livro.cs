@@ -25,7 +25,7 @@ namespace ExemplosMongoDB
 
             string[] assuntosVetor = assuntos.Split(',');
             List<string> assuntosList = new List<string>();
-            for (int i = 0; i <= assuntos.Length - 1; i++)
+            for (int i = 0; i <= assuntosVetor.Length - 1; i++)
             {
                 assuntosList.Add(assuntosVetor[i].Trim());
             }

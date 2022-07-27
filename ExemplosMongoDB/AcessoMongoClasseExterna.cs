@@ -6,8 +6,8 @@ namespace ExemplosMongoDB
 
         static void Main(string[] args)
         {
-            InserindoUmLivroPorVez();
-           // Task T = InserindoMuitosLivrosPorVez();
+          //  InserindoUmLivroPorVez();
+            Task T = InserindoMuitosLivrosPorVez();
             Console.WriteLine("...");
             Console.ReadLine();
         }
@@ -17,8 +17,10 @@ namespace ExemplosMongoDB
 
             await new ConexaoMongo().Livros.InsertOneAsync(
                 new Livro("Dom Casmurro", "Machado de Assis", 1923, 188, "Romance, Literatura Brasileira"));
+                        
             await new ConexaoMongo().Livros.InsertOneAsync(
                 new Livro("A Arte da Ficção", "David Lodge", 2002, 230, "Didática, Auto Ajuda"));
+            
 
             Console.WriteLine("Documento Incluído");
 

@@ -68,6 +68,8 @@ namespace ExemplosMongoDB
 
             livro.Assunto = assuntos;
 
+            Console.WriteLine(livro.Titulo);
+
 
             //acesso ao servidor do MongoDB
             string stringConexao = "mongodb://localhost:27017";
